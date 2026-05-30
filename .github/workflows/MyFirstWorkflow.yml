@@ -41,5 +41,8 @@ jobs:
       - name: Run Docker container
         run: docker run -d -p 8080:80 hello-world-nginx:v1
 
+      - name: Wait for container
+        run: sleep 3
+
       - name: Test nginx response
         run: curl http://localhost:8080
