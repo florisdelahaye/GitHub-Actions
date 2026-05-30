@@ -35,7 +35,8 @@ jobs:
         run: sleep 3
 
       - name: Test nginx response
-        run: curl http://localhost:8080
+        shell: powershell
+        run: Invoke-WebRequest -Uri http://localhost:8080 -UseBasicParsing
 
       - name: Docker meta
         id: meta
