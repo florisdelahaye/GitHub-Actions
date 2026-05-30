@@ -32,11 +32,12 @@ jobs:
         run: docker run -d -p 8080:80 hello-world-nginx:v1
 
       - name: Wait for container
-        run: sleep 3
+        shell: powershell
+        run: Start-Sleep -Seconds 5
 
       - name: Test nginx response
         shell: powershell
-        run: Invoke-WebRequest -Uri http://localhost:8080 -UseBasicParsing
+        run: Invoke-WebRequest -Uri "http://localhost:8080" -UseBasicParsing
 
       - name: Docker meta
         id: meta
