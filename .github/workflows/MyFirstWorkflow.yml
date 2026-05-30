@@ -40,7 +40,8 @@ jobs:
 
       - name: Cleanup old container
         run: docker rm -f $(docker ps -aq) || true
-
+        shell: powershell
+        
       - name: Run Docker container
         run: docker run -d -p 8080:80 hello-world-nginx:v1
 
