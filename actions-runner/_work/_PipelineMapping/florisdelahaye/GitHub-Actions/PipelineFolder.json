@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "florisdelahaye/GitHub-Actions",
+  "pipelineDirectory": "GitHub-Actions",
+  "workspaceDirectory": "GitHub-Actions\\GitHub-Actions",
+  "repositories": {
+    "florisdelahaye/GitHub-Actions": {
+      "repositoryPath": "GitHub-Actions\\GitHub-Actions",
+      "lastRunOn": "05/30/2026 16:56:52 +02:00"
+    }
+  },
+  "lastRunOn": "05/30/2026 16:56:52 +02:00"
+}
