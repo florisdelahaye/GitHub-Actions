@@ -34,3 +34,12 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      
+      - name: Build Docker image
+        run: docker build -t hello-world-nginx:v1 .
+
+      - name: Run Docker container
+        run: docker run -d -p 8080:80 hello-world-nginx:v1
+
+      - name: Test nginx response
+        run: curl http://localhost:8080
