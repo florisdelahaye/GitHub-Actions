@@ -1,0 +1,11 @@
+﻿{
+  "agentId": 2,
+  "agentName": "FLORISDELAHAYE",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelinesghubeus24.actions.githubusercontent.com/g13QydDF6wmsE1v6yxBRhLiULRhS24wowRVyS6KDhnonQRTRM2/",
+  "gitHubUrl": "https://github.com/florisdelahaye/GitHub-Actions",
+  "workFolder": "_work",
+  "useV2Flow": true,
+  "serverUrlV2": "https://broker.actions.githubusercontent.com/"
+}
