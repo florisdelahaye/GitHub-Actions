@@ -40,3 +40,7 @@ jobs:
 
       - name: Check pods
         run: kubectl get pods -n default
+      
+      - name: Helm install
+        shell: powershell
+        run: helm upgrade --install myapp ./helm-chart --namespace default --create-namespace --set image.tag=${{ github.sha }} --set image.repository=ghcr.io/florisdelahaye/hello-world-nginx
