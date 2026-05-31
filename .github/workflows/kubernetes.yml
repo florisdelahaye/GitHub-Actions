@@ -25,6 +25,10 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
+      - name: Update kubeconfig
+        shell: powershell
+        run: k3d kubeconfig get mycluster | Set-Content -Path "$env:USERPROFILE\.kube\config"
+
       - name: Generate random pod name and apply
         shell: powershell
         run: |
