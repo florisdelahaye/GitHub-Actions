@@ -22,7 +22,7 @@ jobs:
       - name: Generate random pod name and apply
         shell: powershell
         run: |
-          $id = -join ((65..90) + (97..122) | Get-Random -Count 6 | % {[char]$_})
+          $id = -join ((97..122) | Get-Random -Count 6 | % {[char]$_})
           $yaml = @"
           apiVersion: v1
           kind: Pod
