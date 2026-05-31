@@ -42,7 +42,7 @@ jobs:
             - name: mypod
               image: rancher/hello-world
           "@
-          $yaml | kubectl apply -f -
+          $yaml | kubectl apply -f - --validate=false
 
       - name: Check pods
         run: kubectl get pods -n <your-namespace>
